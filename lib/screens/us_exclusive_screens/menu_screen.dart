@@ -37,6 +37,7 @@ class _MenuScreenState extends State<MenuScreen> {
       borderRadius: 40,
       showShadow: true,
       angle: -0.0,
+      // drawerShadowsBackgroundColor: Colors.white,
       backgroundColor: Colors.white,
       slideWidth: MediaQuery.of(context).size.width * 0.7,
     );

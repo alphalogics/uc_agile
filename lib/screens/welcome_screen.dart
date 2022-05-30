@@ -76,8 +76,8 @@ class WelcomeScreen extends StatelessWidget {
                       txtColor: Colors.black,
                       onPressed: () async {
                         // await Provider.of<ExclusiveViewModel>(context, listen: false).getMaterialDataResponse('6', '8e176aeed07572c08f2522de1b502501');
-                        // Navigator.of(context).pushReplacementNamed(SignInScreen.id);
-                        Navigator.of(context).pushReplacementNamed(MenuScreen.id);
+                        Navigator.of(context).pushReplacementNamed(SignInScreen.id);
+                        // Navigator.of(context).pushReplacementNamed(MenuScreen.id);
                       },
                     ),
                   ),

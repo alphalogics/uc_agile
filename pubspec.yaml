@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.1+2
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.16.2 <3.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -35,23 +35,23 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   # For Fonts
-  google_fonts: ^2.1.0
+  google_fonts: ^3.0.1
   # For Splash Screen
-  animated_splash_screen: ^1.1.0
+  animated_splash_screen: ^1.2.0
   # Animated Drawer
   flutter_zoom_drawer: ^2.1.2
   # Calender Scheduling
-  table_calendar: ^3.0.3
+  table_calendar: ^3.0.6
   # APIs Handler
-  dio: ^4.0.3
+  dio: ^4.0.6
   # State Management
-  provider: ^6.0.1
+  provider: ^6.0.3
   # Animated Loader
   flutter_spinkit: ^5.1.0
   # URL Launcher
-  url_launcher: ^6.0.20
+  url_launcher: ^6.1.2
   # Share Plus
-  share_plus: ^3.1.0
+  share_plus: ^4.0.4
 
 dev_dependencies:
   flutter_test:
