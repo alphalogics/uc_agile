@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 
-class MenuItem {
+class UCAgileMenuItem {
   final String title;
   final IconData icon;
 
-  const MenuItem(this.title, this.icon);
-
+  const UCAgileMenuItem(this.title, this.icon);
 }

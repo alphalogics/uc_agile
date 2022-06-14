@@ -1,18 +1,16 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:uc_agile/app_const/color_const.dart';
 import 'package:uc_agile/models/uc_exclusive/menu_items.dart';
 
 class MenuItems {
-  static const tip_trick = MenuItem("Tip & Tricks", Icons.album_outlined);
-  static const faqs = MenuItem("FAQ's", Icons.album_outlined);
-  static const videos = MenuItem("Videos", Icons.album_outlined);
-  static const infographics = MenuItem("Infographics", Icons.album_outlined);
-  static const podcast = MenuItem("Podcasts", Icons.album_outlined);
-  static const meeting = MenuItem("Meetups", Icons.album_outlined);
+  static const tip_trick = UCAgileMenuItem("Tip & Tricks", Icons.album_outlined);
+  static const faqs = UCAgileMenuItem("FAQ's", Icons.album_outlined);
+  static const videos = UCAgileMenuItem("Videos", Icons.album_outlined);
+  static const infographics = UCAgileMenuItem("Infographics", Icons.album_outlined);
+  static const podcast = UCAgileMenuItem("Podcasts", Icons.album_outlined);
+  static const meeting = UCAgileMenuItem("Meetups", Icons.album_outlined);
 
-  static const all = <MenuItem>[
+  static const all = <UCAgileMenuItem>[
     tip_trick,
     faqs,
     videos,
@@ -25,8 +23,8 @@ class MenuItems {
 class MenuItemsScreen extends StatelessWidget {
   static const String id = "MenuItemsScreen";
 
-  final MenuItem currentItem;
-  final ValueChanged<MenuItem> onSelectItem;
+  final UCAgileMenuItem currentItem;
+  final ValueChanged<UCAgileMenuItem> onSelectItem;
 
   const MenuItemsScreen({
     Key? key,
@@ -45,7 +43,9 @@ class MenuItemsScreen extends StatelessWidget {
             Spacer(),
             Row(
               children: [
-                SizedBox(width: 10,),
+                SizedBox(
+                  width: 10,
+                ),
                 Container(
                   width: 50,
                   height: 50,
@@ -58,12 +58,20 @@ class MenuItemsScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(width: 10,),
+                SizedBox(
+                  width: 10,
+                ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Ahmad Ijaz", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),),
-                    Text("ahmadijaz@gmail.com", style: TextStyle(color: Colors.white),),
+                    Text(
+                      "Ahmad Ijaz",
+                      style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      "ahmadijaz@gmail.com",
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ],
                 ),
               ],
@@ -75,7 +83,9 @@ class MenuItemsScreen extends StatelessWidget {
             ),
             Row(
               children: [
-                SizedBox(width: 10,),
+                SizedBox(
+                  width: 10,
+                ),
                 Container(
                   width: 40,
                   height: 40,
@@ -83,20 +93,30 @@ class MenuItemsScreen extends StatelessWidget {
                     color: ColorConst.txt_secondary,
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Icon(Icons.logout, color: Colors.white,),
+                  child: Icon(
+                    Icons.logout,
+                    color: Colors.white,
+                  ),
                 ),
-                SizedBox(width: 10,),
-                Text("Sign Out", style: TextStyle(color: Colors.white),),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  "Sign Out",
+                  style: TextStyle(color: Colors.white),
+                ),
               ],
             ),
-            Spacer(flex: 2,),
+            Spacer(
+              flex: 2,
+            ),
           ],
         ),
       ),
     );
   }
 
-  Widget buildMenuItem(MenuItem item) => ListTileTheme(
+  Widget buildMenuItem(UCAgileMenuItem item) => ListTileTheme(
         selectedColor: Colors.white,
         textColor: Colors.white,
         iconColor: Colors.white,
